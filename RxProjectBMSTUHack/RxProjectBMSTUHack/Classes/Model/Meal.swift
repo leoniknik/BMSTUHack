@@ -14,7 +14,7 @@ final class Meal {
     let totalCallories: Double
     let price: Double
     let nutritions: [MealNutrition]
-    let type: MealType
+    let type: Category
     let daysAvailable: [WeekDay]
     
     init(
@@ -23,7 +23,7 @@ final class Meal {
         totalCallories: Double,
         price: Double,
         nutritions: [MealNutrition],
-        type: MealType,
+        type: Category,
         daysAvailable: [WeekDay]
         ) {
         self.name = name
@@ -36,7 +36,7 @@ final class Meal {
     }
 }
 
-enum MealType {
+enum Category {
     case salad
     case soup
     case hot

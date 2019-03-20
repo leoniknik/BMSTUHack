@@ -17,7 +17,9 @@ final class WeekViewController: UIViewController {
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var collectionViewFlow: UICollectionViewFlowLayout!
     
-    var activeDay: WeekDay?
+    var activeDay: WeekDay? {
+        didSet { delegate?.didChangeDay() }
+    }
     var week = [WeekDay]() {
         didSet { activeDay = week.first }
     }
@@ -65,6 +67,5 @@ extension WeekViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let day = week[indexPath.row]
         activeDay = day
-        delegate?.didChangeDay()
     }
 }
