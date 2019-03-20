@@ -157,7 +157,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yCa-eJ-nTe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lkH-h5-Hi1">
                                     <size key="itemSize" width="50" height="50"/>
@@ -172,7 +172,7 @@
                         <constraints>
                             <constraint firstItem="yCa-eJ-nTe" firstAttribute="top" secondItem="Nhh-4A-Ycm" secondAttribute="top" id="1Lc-pT-jZJ"/>
                             <constraint firstAttribute="trailing" secondItem="yCa-eJ-nTe" secondAttribute="trailing" id="e7J-TC-Mok"/>
-                            <constraint firstAttribute="bottom" secondItem="yCa-eJ-nTe" secondAttribute="bottom" id="n3T-Iu-YwA"/>
+                            <constraint firstAttribute="bottom" secondItem="yCa-eJ-nTe" secondAttribute="bottom" constant="5" id="n3T-Iu-YwA"/>
                             <constraint firstItem="yCa-eJ-nTe" firstAttribute="leading" secondItem="Nhh-4A-Ycm" secondAttribute="leading" id="ytH-7y-HXc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Dl-ub-wIE"/>
@@ -180,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OAF-IY-Cpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2516" y="65"/>
+            <point key="canvasLocation" x="2516" y="64.767616191904054"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ykw-0S-5OK">
