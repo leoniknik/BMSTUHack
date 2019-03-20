@@ -26,10 +26,11 @@
 		CA324B2622429CF8002DC3C3 /* MessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA324B2422429CF8002DC3C3 /* MessCell.xib */; };
 		CA324B282242A148002DC3C3 /* Mess.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA324B272242A148002DC3C3 /* Mess.swift */; };
 		CA324B2B2242A424002DC3C3 /* MessDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA324B2A2242A424002DC3C3 /* MessDataSource.swift */; };
+		CA9071352242D0D2002D7377 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9071332242D0D2002D7377 /* CategoryCell.swift */; };
+		CA9071362242D0D2002D7377 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9071342242D0D2002D7377 /* CategoryCell.xib */; };
 		DED8A7742242C942009FA45A /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8A7732242C942009FA45A /* ServiceLayer.swift */; };
 		DED8A7762242C9BD009FA45A /* UIImage+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8A7752242C9BD009FA45A /* UIImage+Loader.swift */; };
 		DED8A77B2242CB98009FA45A /* UIView+RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8A7782242CB98009FA45A /* UIView+RoundCorner.swift */; };
-		DED8A77C2242CB98009FA45A /* Main1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED8A7792242CB98009FA45A /* Main1.storyboard */; };
 		DED8A77D2242CB98009FA45A /* MealInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8A77A2242CB98009FA45A /* MealInfoViewController.swift */; };
 		DED8A77F2242CBA8009FA45A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED8A77E2242CBA8009FA45A /* Images.xcassets */; };
 		F60703F33E124B55F1EC0388 /* Pods_RxProjectBMSTUHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4ACBB935FD909CAE8D4E28 /* Pods_RxProjectBMSTUHack.framework */; };
@@ -60,10 +61,11 @@
 		CA324B2422429CF8002DC3C3 /* MessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessCell.xib; sourceTree = "<group>"; };
 		CA324B272242A148002DC3C3 /* Mess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mess.swift; sourceTree = "<group>"; };
 		CA324B2A2242A424002DC3C3 /* MessDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessDataSource.swift; sourceTree = "<group>"; };
+		CA9071332242D0D2002D7377 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		CA9071342242D0D2002D7377 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		DED8A7732242C942009FA45A /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
 		DED8A7752242C9BD009FA45A /* UIImage+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Loader.swift"; sourceTree = "<group>"; };
 		DED8A7782242CB98009FA45A /* UIView+RoundCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCorner.swift"; sourceTree = "<group>"; };
-		DED8A7792242CB98009FA45A /* Main1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main1.storyboard; sourceTree = "<group>"; };
 		DED8A77A2242CB98009FA45A /* MealInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealInfoViewController.swift; sourceTree = "<group>"; };
 		DED8A77E2242CBA8009FA45A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +124,8 @@
 		CA1077D32242C372006F64E8 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				CA9071332242D0D2002D7377 /* CategoryCell.swift */,
+				CA9071342242D0D2002D7377 /* CategoryCell.xib */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -294,7 +298,6 @@
 		DED8A7772242CB79009FA45A /* MealInfo */ = {
 			isa = PBXGroup;
 			children = (
-				DED8A7792242CB98009FA45A /* Main1.storyboard */,
 				DED8A77A2242CB98009FA45A /* MealInfoViewController.swift */,
 			);
 			path = MealInfo;
@@ -361,12 +364,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA324B0E2242982E002DC3C3 /* LaunchScreen.storyboard in Resources */,
+				CA9071362242D0D2002D7377 /* CategoryCell.xib in Resources */,
 				CA324B2622429CF8002DC3C3 /* MessCell.xib in Resources */,
 				DED8A77F2242CBA8009FA45A /* Images.xcassets in Resources */,
 				CA324B0B2242982E002DC3C3 /* Assets.xcassets in Resources */,
 				CA1077D82242C3AA006F64E8 /* DayCell.xib in Resources */,
 				CA324B092242982E002DC3C3 /* Main.storyboard in Resources */,
-				DED8A77C2242CB98009FA45A /* Main1.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA1077CD2242BCF1006F64E8 /* WeekDay.swift in Sources */,
+				CA9071352242D0D2002D7377 /* CategoryCell.swift in Sources */,
 				CA1077DA2242C5CE006F64E8 /* CategoryListViewController.swift in Sources */,
 				DED8A7762242C9BD009FA45A /* UIImage+Loader.swift in Sources */,
 				DED8A77D2242CB98009FA45A /* MealInfoViewController.swift in Sources */,

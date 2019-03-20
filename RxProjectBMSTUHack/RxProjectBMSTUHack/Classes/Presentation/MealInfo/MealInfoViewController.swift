@@ -25,7 +25,6 @@ final class MealInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.delegate = self
         setupUI()
     }
     
@@ -39,7 +38,7 @@ final class MealInfoViewController: UIViewController {
         title = "Информация о блюде"
         imageView.image = meal.image
         mealTitle.text = meal.name
-        totalCalloryLabel.text = "Каллорийность \(meal.totalCallories)к.кал"
+        totalCalloryLabel.text = "Каллорийность \(meal.totalCallories) ККал"
         setupChart()
     }
     
@@ -83,14 +82,5 @@ final class MealInfoViewController: UIViewController {
         legend.xEntrySpace = 0
         legend.yEntrySpace = 0
         legend.yOffset = 0
-    }
-}
-
-extension MealInfoViewController: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        guard scrollView.contentOffset.y < 0 else { return }
-//        mealImageHeightConstraint.constant = 250 + -scrollView.contentOffset.y
-        //view.layoutSubviews()
-        view.layoutIfNeeded()
     }
 }

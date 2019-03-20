@@ -14,10 +14,15 @@ protocol CategoryListViewControllerDelegate: class {
 
 final class CategoryListViewController: UIViewController {
 
+    
+    
     weak var delegate: CategoryListViewControllerDelegate?
     
+    var activeCategory: Category? {
+        didSet { delegate?.didChangeCategory() }
+    }
     var categories = [Category]() {
-        
+        didSet { activeCategory = categories.first }
     }
     
     override func viewDidLoad() {
