@@ -21,6 +21,7 @@ final class DayCell: UICollectionViewCell {
     
     func fill(day: WeekDay) {
         titleLabel.text = day.shortTitle
+        titleLabel.textAlignment = .center
     }
 
 }
