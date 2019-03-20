@@ -34,5 +34,10 @@ final class MenuViewController: UIViewController {
             navigationController?.navigationBar.prefersLargeTitles = false
         }
     }
-    
+}
+
+extension MenuViewController: WeekViewControllerDelegate {
+    func didChangeDay() {
+        
+    }
 }

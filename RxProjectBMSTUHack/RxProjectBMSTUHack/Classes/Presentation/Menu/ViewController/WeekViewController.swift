@@ -9,7 +9,7 @@
 import UIKit
 
 protocol WeekViewControllerDelegate: class {
-    func didChange(day: WeekDay)
+    func didChangeDay()
 }
 
 final class WeekViewController: UIViewController {
@@ -65,6 +65,6 @@ extension WeekViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let day = week[indexPath.row]
         activeDay = day
-        delegate?.didChange(day: day)
+        delegate?.didChangeDay()
     }
 }
