@@ -10,12 +10,17 @@ import UIKit
 
 final class MealListViewController: UIViewController {
     
+    @IBOutlet weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var collectionView: UICollectionView!
     let segue = "ToDetail"
     var meals = [Meal]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let size = (view.frame.width-60)/2
+        collectionViewFlowLayout.itemSize = CGSize(width: size, height: size)
+        collectionViewFlowLayout.scrollDirection = .vertical
+        collectionViewFlowLayout.sectionInset = UIEdgeInsets(top:20, left: 20, bottom: 20, right: 20)
         collectionView.register(MealCell.self, forCellWithReuseIdentifier: "\(MealCell.self)")
     }
 }
