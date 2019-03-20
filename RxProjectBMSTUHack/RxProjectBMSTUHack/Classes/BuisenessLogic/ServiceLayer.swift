@@ -97,13 +97,13 @@ final class ServiceLayer {
             daysAvailable: [.monday, .tuesday, .wednesday, .thirsday, .friday, .saturday, .sunday]
         )
         
-        let mess1 = Mess(
+        let smallMess = Mess(
             title: "Малая столовая",
             isOpen: true,
             image: UIImage(.smallMess)!,
             meals: [cola, makaroni, kotleta, oliv, redSoup])
         
-        messes.append(mess1)
+        messes.append(smallMess)
         
         let teaNutr = [
             MealNutrition(type: .fat, value: 10.0),
@@ -184,6 +184,22 @@ final class ServiceLayer {
             type: .soup,
             daysAvailable: [.monday, .tuesday, .wednesday, .thirsday, .friday, .saturday, .sunday]
         )
+        
+        let mediumMess = Mess(
+            title: "Средняя столовая",
+            isOpen: false,
+            image: UIImage(.mediumMess)!,
+            meals: [tea, redSalad, rise, chicken, rassol])
+        
+        messes.append(mediumMess)
+        
+        let bigMess = Mess(
+            title: "Большая столовая",
+            isOpen: true,
+            image: UIImage(.bigMess)!,
+            meals: [tea, redSalad, rise, chicken, rassol, cola, makaroni, kotleta, oliv, redSoup])
+        
+        messes.append(mediumMess)
         
     }
 }
