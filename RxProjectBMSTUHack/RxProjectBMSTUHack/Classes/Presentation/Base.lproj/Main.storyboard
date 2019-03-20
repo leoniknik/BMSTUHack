@@ -148,10 +148,10 @@
             </objects>
             <point key="canvasLocation" x="1697" y="810"/>
         </scene>
-        <!--View Controller-->
+        <!--Category List View Controller-->
         <scene sceneID="B7k-NS-uh4">
             <objects>
-                <viewController id="w7x-eV-MrF" sceneMemberID="viewController">
+                <viewController id="w7x-eV-MrF" customClass="CategoryListViewController" customModule="RxProjectBMSTUHack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nhh-4A-Ycm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,6 +177,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Dl-ub-wIE"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="yCa-eJ-nTe" id="4x7-vR-mG2"/>
+                        <outlet property="collectionViewFlow" destination="lkH-h5-Hi1" id="bO5-qJ-fQp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OAF-IY-Cpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,8 +10,14 @@ import UIKit
 
 final class CategoryCell: UICollectionViewCell {
 
+    @IBOutlet private weak var categoryLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    func fill(category: Category) {
+        categoryLabel.text = category.rawValue
     }
 
 }

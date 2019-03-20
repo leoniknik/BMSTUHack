@@ -39,10 +39,10 @@ final class Meal {
     }
 }
 
-enum Category {
-    case salad
-    case soup
-    case hot
-    case drink
+enum Category: String {
+    case salad = "Салаты"
+    case soup = "Супы"
+    case hot = "Горячее"
+    case drink = "Напитки"
 }
 
