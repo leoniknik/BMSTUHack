@@ -186,14 +186,38 @@
             </objects>
             <point key="canvasLocation" x="2516" y="64.767616191904054"/>
         </scene>
-        <!--View Controller-->
+        <!--Cart View Controller-->
         <scene sceneID="ykw-0S-5OK">
             <objects>
-                <viewController storyboardIdentifier="CartViewController" id="Lff-zh-aTS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CartViewController" id="Lff-zh-aTS" customClass="CartViewController" customModule="RxProjectBMSTUHack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H50-yK-qiP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nD-dG-kin" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="37.5" y="133.5" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.7725490196" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="0vq-Nc-FkU"/>
+                                    <constraint firstAttribute="width" constant="300" id="qmO-E7-qbU"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="EK3-Nj-dsR"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Общая стоимость: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQg-0d-igG">
+                                <rect key="frame" x="16" y="92.5" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8nD-dG-kin" firstAttribute="centerY" secondItem="H50-yK-qiP" secondAttribute="centerY" constant="-50" id="BA8-5N-c7g"/>
+                            <constraint firstItem="PRf-wA-6Ph" firstAttribute="trailing" secondItem="IQg-0d-igG" secondAttribute="trailing" constant="16" id="Phn-2J-LXm"/>
+                            <constraint firstItem="8nD-dG-kin" firstAttribute="top" secondItem="IQg-0d-igG" secondAttribute="bottom" constant="20" id="r4t-VH-YTV"/>
+                            <constraint firstItem="IQg-0d-igG" firstAttribute="leading" secondItem="PRf-wA-6Ph" secondAttribute="leading" constant="16" id="sbD-Uw-WLd"/>
+                            <constraint firstItem="8nD-dG-kin" firstAttribute="centerX" secondItem="H50-yK-qiP" secondAttribute="centerX" id="w05-iv-Jow"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PRf-wA-6Ph"/>
                     </view>
                 </viewController>
