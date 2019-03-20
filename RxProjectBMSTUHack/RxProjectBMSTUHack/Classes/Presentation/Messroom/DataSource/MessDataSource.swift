@@ -15,10 +15,7 @@ final class MessDataSource: NSObject, UITableViewDataSource {
     let messCellID = "\(MessCell.self)"
     
     override init() {
-        let bigMess = Mess(title: "Большая столовая", isOpen: true, image: #imageLiteral(resourceName: "bigMess"))
-        let pancake = Mess(title: "Блинная", isOpen: true, image: #imageLiteral(resourceName: "bigMess"))
-        let goodMess = Mess(title: "Столовая на 3 этаже", isOpen: false, image: #imageLiteral(resourceName: "bigMess"))
-        models = [bigMess, pancake, goodMess]
+        models = ServiceLayer.instance.messes
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

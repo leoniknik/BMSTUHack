@@ -26,6 +26,12 @@ final class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        weekViewController.week = mess.days
+        setup()
+    }
+    
+    func setup() {
+        mealsViewController.meals = mess.meals
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,6 +44,14 @@ final class MenuViewController: UIViewController {
 
 extension MenuViewController: WeekViewControllerDelegate {
     func didChangeDay() {
-        
+        guard let day = weekViewController.activeDay else { return }
+        mealsViewController.meals = mess.meals.filter { $0.daysAvailable.contains(day) }
+    }
+}
+
+extension MenuViewController: CategoryListViewControllerDelegate {
+    func didChangeCategory() {
+        guard let category = categoriesViewController.activeCategory else { return }
+        mealsViewController.meals = mess.meals.filter { $0.type == category }
     }
 }

@@ -12,8 +12,9 @@ final class MealListViewController: UIViewController {
     
     @IBOutlet weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var collectionView: UICollectionView!
-    let segue = "ToDetail"
-    var meals = [Meal]()
+    var meals = [Meal]() {
+        didSet { collectionView.reloadData() }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +22,9 @@ final class MealListViewController: UIViewController {
         collectionViewFlowLayout.itemSize = CGSize(width: size, height: size)
         collectionViewFlowLayout.scrollDirection = .vertical
         collectionViewFlowLayout.sectionInset = UIEdgeInsets(top:20, left: 20, bottom: 20, right: 20)
-        collectionView.register(MealCell.self, forCellWithReuseIdentifier: "\(MealCell.self)")
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard
-            let meal = sender as? Meal,
-            let viewController = segue.destination as? MealInfoViewController
-            else { return }
-        viewController.meal = meal
+        collectionView.delegate = self
+        collectionView.dataSource = self
+//        collectionView.register(MealCell.self, forCellWithReuseIdentifier: "\(MealCell.self)")
     }
 }
 
@@ -46,12 +41,14 @@ extension MealListViewController: UICollectionViewDataSource {
         cell.price.text = "\(meal.price) Руб"
         return cell
     }
-    
-    
 }
 
 extension MealListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: segue, sender: meals[indexPath.item])
+        let meal = meals[indexPath.row]
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: "MealInfoViewController") as? MealInfoViewController else { return }
+        viewController.meal = meal
+        present(viewController, animated: true, completion: nil)
     }
 }

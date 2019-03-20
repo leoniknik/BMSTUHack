@@ -140,13 +140,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wit-Pd-Saj">
-                                                    <rect key="frame" x="10" y="10" width="203" height="142"/>
+                                                    <rect key="frame" x="10" y="10" width="203" height="122"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="wit-Pd-Saj" secondAttribute="height" multiplier="10:7" id="weR-yP-J5H"/>
+                                                        <constraint firstAttribute="width" secondItem="wit-Pd-Saj" secondAttribute="height" multiplier="10:6" id="weR-yP-J5H"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVl-dY-Vhg">
-                                                    <rect key="frame" x="18" y="162" width="187" height="33"/>
+                                                    <rect key="frame" x="18" y="142" width="187" height="53"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -192,6 +192,7 @@
                     <connections>
                         <outlet property="collectionView" destination="1NU-EB-8l1" id="QpS-vA-YVQ"/>
                         <outlet property="collectionViewFlowLayout" destination="6Tm-Bc-zG0" id="knh-IS-PZ9"/>
+                        <segue destination="G35-Ug-frk" kind="show" identifier="toMeal" id="y2K-qE-bPr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yoc-x0-Zhu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -318,11 +319,11 @@
             <objects>
                 <viewController storyboardIdentifier="MealInfoViewController" id="G35-Ug-frk" customClass="MealInfoViewController" customModule="RxProjectBMSTUHack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yVS-vB-uZg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="431"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSs-L2-UiG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="431"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AmB-dR-eGn">
                                         <rect key="frame" x="0.0" y="-44" width="375" height="250"/>
@@ -331,7 +332,7 @@
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyL-Pg-P12" customClass="PieChartView" customModule="Charts">
-                                        <rect key="frame" x="37.5" y="226" width="300" height="267"/>
+                                        <rect key="frame" x="37.5" y="226" width="300" height="172.5"/>
                                         <color key="backgroundColor" red="0.33333333329999998" green="0.7725490196" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
@@ -346,7 +347,7 @@
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3J-Se-3Vh">
-                                <rect key="frame" x="20" y="597" width="335" height="50"/>
+                                <rect key="frame" x="20" y="361" width="335" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiS-ln-Nam">
                                         <rect key="frame" x="10" y="5" width="315" height="40"/>
@@ -365,7 +366,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zdv-z0-HjP">
-                                <rect key="frame" x="293" y="175" width="62" height="31"/>
+                                <rect key="frame" x="293" y="155" width="62" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6k-Aj-dwa">
                                         <rect key="frame" x="10" y="5" width="42" height="21"/>

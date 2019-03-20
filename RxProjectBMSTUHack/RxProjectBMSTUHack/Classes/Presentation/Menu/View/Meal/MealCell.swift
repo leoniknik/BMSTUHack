@@ -12,5 +12,4 @@ class MealCell: UICollectionViewCell {
     @IBOutlet weak var mealImage: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var price: UILabel!
-    
 }

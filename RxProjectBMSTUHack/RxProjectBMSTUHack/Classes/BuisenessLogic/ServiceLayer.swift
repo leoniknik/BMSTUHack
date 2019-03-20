@@ -101,7 +101,9 @@ final class ServiceLayer {
             title: "Малая столовая",
             isOpen: true,
             image: UIImage(.smallMess)!,
-            meals: [cola, makaroni, kotleta, oliv, redSoup])
+            meals: [cola, makaroni, kotleta, oliv, redSoup],
+            days: [.monday, .wednesday, .friday]
+        )
         
         messes.append(smallMess)
         
@@ -189,7 +191,9 @@ final class ServiceLayer {
             title: "Средняя столовая",
             isOpen: false,
             image: UIImage(.mediumMess)!,
-            meals: [tea, redSalad, rise, chicken, rassol])
+            meals: [tea, redSalad, rise, chicken, rassol],
+            days: [.monday, .wednesday, .friday, .saturday]
+        )
         
         messes.append(mediumMess)
         
@@ -197,9 +201,11 @@ final class ServiceLayer {
             title: "Большая столовая",
             isOpen: true,
             image: UIImage(.bigMess)!,
-            meals: [tea, redSalad, rise, chicken, rassol, cola, makaroni, kotleta, oliv, redSoup])
+            meals: [tea, redSalad, rise, chicken, rassol, cola, makaroni, kotleta, oliv, redSoup],
+            days: [.monday, .tuesday, .wednesday, .friday, .saturday, .sunday]
+        )
         
-        messes.append(mediumMess)
+        messes.append(bigMess)
         
     }
 }
