@@ -11,7 +11,7 @@ import UIKit
 final class MealListViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    let segue = "ToDetail"
     var meals = [Meal]()
 
     override func viewDidLoad() {
@@ -38,5 +38,7 @@ extension MealListViewController: UICollectionViewDataSource {
 }
 
 extension MealListViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: segue, sender: meals[indexPath.item])
+    }
 }
