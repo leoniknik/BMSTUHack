@@ -10,18 +10,20 @@ import UIKit
 
 final class Meal {
     let name: String
-    let image: UIImage
+    let image: UIImage?
     let totalCallories: Double
     let price: Double
+    let weight: Double
     let nutritions: [MealNutrition]
     let type: MealType
     let daysAvailable: [WeekDay]
     
     init(
         name: String,
-        image: UIImage,
+        image: UIImage?,
         totalCallories: Double,
         price: Double,
+        weight: Double,
         nutritions: [MealNutrition],
         type: MealType,
         daysAvailable: [WeekDay]
@@ -30,6 +32,7 @@ final class Meal {
         self.image = image
         self.totalCallories = totalCallories
         self.price = price
+        self.weight = weight
         self.nutritions = nutritions
         self.type = type
         self.daysAvailable = daysAvailable
