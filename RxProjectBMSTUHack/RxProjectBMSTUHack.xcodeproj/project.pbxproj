@@ -7,14 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA1077C52242AB1D006F64E8 /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1077C42242AB1D006F64E8 /* UIColor+CustomColors.swift */; };
+		CA1077C72242BB06006F64E8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1077C62242BB06006F64E8 /* MenuViewController.swift */; };
+		CA1077CB2242BCB5006F64E8 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1077CA2242BCB5006F64E8 /* Meal.swift */; };
+		CA1077CD2242BCF1006F64E8 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1077CC2242BCF1006F64E8 /* WeekDay.swift */; };
+		CA1077CF2242BD0D006F64E8 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1077CE2242BD0D006F64E8 /* Nutrition.swift */; };
+		CA1077D12242C231006F64E8 /* WeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1077D02242C231006F64E8 /* WeekViewController.swift */; };
+		CA1077D72242C3AA006F64E8 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1077D52242C3AA006F64E8 /* DayCell.swift */; };
+		CA1077D82242C3AA006F64E8 /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA1077D62242C3AA006F64E8 /* DayCell.xib */; };
+		CA1077DA2242C5CE006F64E8 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1077D92242C5CE006F64E8 /* CategoryListViewController.swift */; };
+		CA1077DC2242C629006F64E8 /* MealListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1077DB2242C629006F64E8 /* MealListViewController.swift */; };
 		CA324B042242982E002DC3C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA324B032242982E002DC3C3 /* AppDelegate.swift */; };
 		CA324B092242982E002DC3C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA324B072242982E002DC3C3 /* Main.storyboard */; };
 		CA324B0B2242982E002DC3C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA324B0A2242982E002DC3C3 /* Assets.xcassets */; };
 		CA324B0E2242982E002DC3C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA324B0C2242982E002DC3C3 /* LaunchScreen.storyboard */; };
 		CA324B21224299D5002DC3C3 /* MessListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA324B20224299D5002DC3C3 /* MessListViewController.swift */; };
+		CA324B2522429CF8002DC3C3 /* MessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA324B2322429CF8002DC3C3 /* MessCell.swift */; };
+		CA324B2622429CF8002DC3C3 /* MessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA324B2422429CF8002DC3C3 /* MessCell.xib */; };
+		CA324B282242A148002DC3C3 /* Mess.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA324B272242A148002DC3C3 /* Mess.swift */; };
+		CA324B2B2242A424002DC3C3 /* MessDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA324B2A2242A424002DC3C3 /* MessDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA1077C42242AB1D006F64E8 /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
+		CA1077C62242BB06006F64E8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CA1077CA2242BCB5006F64E8 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		CA1077CC2242BCF1006F64E8 /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
+		CA1077CE2242BD0D006F64E8 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
+		CA1077D02242C231006F64E8 /* WeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewController.swift; sourceTree = "<group>"; };
+		CA1077D52242C3AA006F64E8 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		CA1077D62242C3AA006F64E8 /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
+		CA1077D92242C5CE006F64E8 /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		CA1077DB2242C629006F64E8 /* MealListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListViewController.swift; sourceTree = "<group>"; };
 		CA324B002242982E002DC3C3 /* RxProjectBMSTUHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxProjectBMSTUHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA324B032242982E002DC3C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA324B082242982E002DC3C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -22,6 +46,10 @@
 		CA324B0D2242982E002DC3C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA324B0F2242982E002DC3C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA324B20224299D5002DC3C3 /* MessListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessListViewController.swift; sourceTree = "<group>"; };
+		CA324B2322429CF8002DC3C3 /* MessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessCell.swift; sourceTree = "<group>"; };
+		CA324B2422429CF8002DC3C3 /* MessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessCell.xib; sourceTree = "<group>"; };
+		CA324B272242A148002DC3C3 /* Mess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mess.swift; sourceTree = "<group>"; };
+		CA324B2A2242A424002DC3C3 /* MessDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +63,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA1077C82242BB0B006F64E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA1077D42242C37C006F64E8 /* Meal */,
+				CA1077D32242C372006F64E8 /* Category */,
+				CA1077D22242C36B006F64E8 /* Day */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA1077C92242BB0F006F64E8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA1077C62242BB06006F64E8 /* MenuViewController.swift */,
+				CA1077D02242C231006F64E8 /* WeekViewController.swift */,
+				CA1077D92242C5CE006F64E8 /* CategoryListViewController.swift */,
+				CA1077DB2242C629006F64E8 /* MealListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CA1077D22242C36B006F64E8 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				CA1077D52242C3AA006F64E8 /* DayCell.swift */,
+				CA1077D62242C3AA006F64E8 /* DayCell.xib */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		CA1077D32242C372006F64E8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		CA1077D42242C37C006F64E8 /* Meal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Meal;
+			sourceTree = "<group>";
+		};
 		CA324AF72242982D002DC3C3 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +145,7 @@
 		CA324B1622429866002DC3C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA324B2222429CDB002DC3C3 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,6 +165,7 @@
 			children = (
 				CA324B0C2242982E002DC3C3 /* LaunchScreen.storyboard */,
 				CA324B0A2242982E002DC3C3 /* Assets.xcassets */,
+				CA1077C42242AB1D006F64E8 /* UIColor+CustomColors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -125,6 +199,10 @@
 		CA324B1C224298CE002DC3C3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CA324B272242A148002DC3C3 /* Mess.swift */,
+				CA1077CA2242BCB5006F64E8 /* Meal.swift */,
+				CA1077CC2242BCF1006F64E8 /* WeekDay.swift */,
+				CA1077CE2242BD0D006F64E8 /* Nutrition.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -132,6 +210,7 @@
 		CA324B1D224298D6002DC3C3 /* Messroom */ = {
 			isa = PBXGroup;
 			children = (
+				CA324B292242A414002DC3C3 /* DataSource */,
 				CA324B1622429866002DC3C3 /* View */,
 				CA324B152242985F002DC3C3 /* ViewController */,
 			);
@@ -148,8 +227,27 @@
 		CA324B1F22429915002DC3C3 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				CA1077C92242BB0F006F64E8 /* ViewController */,
+				CA1077C82242BB0B006F64E8 /* View */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		CA324B2222429CDB002DC3C3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CA324B2322429CF8002DC3C3 /* MessCell.swift */,
+				CA324B2422429CF8002DC3C3 /* MessCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CA324B292242A414002DC3C3 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				CA324B2A2242A424002DC3C3 /* MessDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA324B0E2242982E002DC3C3 /* LaunchScreen.storyboard in Resources */,
+				CA324B2622429CF8002DC3C3 /* MessCell.xib in Resources */,
 				CA324B0B2242982E002DC3C3 /* Assets.xcassets in Resources */,
+				CA1077D82242C3AA006F64E8 /* DayCell.xib in Resources */,
 				CA324B092242982E002DC3C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,8 +323,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1077CD2242BCF1006F64E8 /* WeekDay.swift in Sources */,
+				CA1077DA2242C5CE006F64E8 /* CategoryListViewController.swift in Sources */,
 				CA324B21224299D5002DC3C3 /* MessListViewController.swift in Sources */,
+				CA1077CF2242BD0D006F64E8 /* Nutrition.swift in Sources */,
+				CA324B2B2242A424002DC3C3 /* MessDataSource.swift in Sources */,
+				CA324B282242A148002DC3C3 /* Mess.swift in Sources */,
+				CA1077C72242BB06006F64E8 /* MenuViewController.swift in Sources */,
+				CA1077DC2242C629006F64E8 /* MealListViewController.swift in Sources */,
+				CA1077CB2242BCB5006F64E8 /* Meal.swift in Sources */,
 				CA324B042242982E002DC3C3 /* AppDelegate.swift in Sources */,
+				CA1077C52242AB1D006F64E8 /* UIColor+CustomColors.swift in Sources */,
+				CA1077D12242C231006F64E8 /* WeekViewController.swift in Sources */,
+				CA1077D72242C3AA006F64E8 /* DayCell.swift in Sources */,
+				CA324B2522429CF8002DC3C3 /* MessCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
