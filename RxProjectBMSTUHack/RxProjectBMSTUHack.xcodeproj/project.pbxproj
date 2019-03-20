@@ -33,6 +33,7 @@
 		DED8A77B2242CB98009FA45A /* UIView+RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8A7782242CB98009FA45A /* UIView+RoundCorner.swift */; };
 		DED8A77D2242CB98009FA45A /* MealInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8A77A2242CB98009FA45A /* MealInfoViewController.swift */; };
 		DED8A77F2242CBA8009FA45A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED8A77E2242CBA8009FA45A /* Images.xcassets */; };
+		DEFD488E2242D40B004AB9DC /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD488D2242D40B004AB9DC /* MealCell.swift */; };
 		F60703F33E124B55F1EC0388 /* Pods_RxProjectBMSTUHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4ACBB935FD909CAE8D4E28 /* Pods_RxProjectBMSTUHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		DED8A7782242CB98009FA45A /* UIView+RoundCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCorner.swift"; sourceTree = "<group>"; };
 		DED8A77A2242CB98009FA45A /* MealInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealInfoViewController.swift; sourceTree = "<group>"; };
 		DED8A77E2242CBA8009FA45A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DEFD488D2242D40B004AB9DC /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealCell.swift; path = RxProjectBMSTUHack/Classes/Presentation/Menu/View/Meal/MealCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		CA1077D42242C37C006F64E8 /* Meal */ = {
 			isa = PBXGroup;
 			children = (
+				DEFD488D2242D40B004AB9DC /* MealCell.swift */,
 			);
 			path = Meal;
 			sourceTree = "<group>";
@@ -406,7 +409,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxProjectBMSTUHack/Pods-RxProjectBMSTUHack-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxProjectBMSTUHack/Pods-RxProjectBMSTUHack-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -417,7 +420,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxProjectBMSTUHack/Pods-RxProjectBMSTUHack-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxProjectBMSTUHack/Pods-RxProjectBMSTUHack-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -427,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFD488E2242D40B004AB9DC /* MealCell.swift in Sources */,
 				CA1077CD2242BCF1006F64E8 /* WeekDay.swift in Sources */,
 				CA9071352242D0D2002D7377 /* CategoryCell.swift in Sources */,
 				CA1077DA2242C5CE006F64E8 /* CategoryListViewController.swift in Sources */,
