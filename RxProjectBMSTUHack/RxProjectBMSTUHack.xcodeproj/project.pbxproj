@@ -26,9 +26,19 @@
 		CA324B2622429CF8002DC3C3 /* MessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA324B2422429CF8002DC3C3 /* MessCell.xib */; };
 		CA324B282242A148002DC3C3 /* Mess.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA324B272242A148002DC3C3 /* Mess.swift */; };
 		CA324B2B2242A424002DC3C3 /* MessDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA324B2A2242A424002DC3C3 /* MessDataSource.swift */; };
+		DED8A7742242C942009FA45A /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8A7732242C942009FA45A /* ServiceLayer.swift */; };
+		DED8A7762242C9BD009FA45A /* UIImage+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8A7752242C9BD009FA45A /* UIImage+Loader.swift */; };
+		DED8A77B2242CB98009FA45A /* UIView+RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8A7782242CB98009FA45A /* UIView+RoundCorner.swift */; };
+		DED8A77C2242CB98009FA45A /* Main1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED8A7792242CB98009FA45A /* Main1.storyboard */; };
+		DED8A77D2242CB98009FA45A /* MealInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8A77A2242CB98009FA45A /* MealInfoViewController.swift */; };
+		DED8A77F2242CBA8009FA45A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED8A77E2242CBA8009FA45A /* Images.xcassets */; };
+		F60703F33E124B55F1EC0388 /* Pods_RxProjectBMSTUHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4ACBB935FD909CAE8D4E28 /* Pods_RxProjectBMSTUHack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3ED8FB969BD698EE5DE85F11 /* Pods-RxProjectBMSTUHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxProjectBMSTUHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxProjectBMSTUHack/Pods-RxProjectBMSTUHack.debug.xcconfig"; sourceTree = "<group>"; };
+		972E8991CBD1F78A4A32A418 /* Pods-RxProjectBMSTUHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxProjectBMSTUHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxProjectBMSTUHack/Pods-RxProjectBMSTUHack.release.xcconfig"; sourceTree = "<group>"; };
+		BD4ACBB935FD909CAE8D4E28 /* Pods_RxProjectBMSTUHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxProjectBMSTUHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1077C42242AB1D006F64E8 /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
 		CA1077C62242BB06006F64E8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CA1077CA2242BCB5006F64E8 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
@@ -50,6 +60,12 @@
 		CA324B2422429CF8002DC3C3 /* MessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessCell.xib; sourceTree = "<group>"; };
 		CA324B272242A148002DC3C3 /* Mess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mess.swift; sourceTree = "<group>"; };
 		CA324B2A2242A424002DC3C3 /* MessDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessDataSource.swift; sourceTree = "<group>"; };
+		DED8A7732242C942009FA45A /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		DED8A7752242C9BD009FA45A /* UIImage+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Loader.swift"; sourceTree = "<group>"; };
+		DED8A7782242CB98009FA45A /* UIView+RoundCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCorner.swift"; sourceTree = "<group>"; };
+		DED8A7792242CB98009FA45A /* Main1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main1.storyboard; sourceTree = "<group>"; };
+		DED8A77A2242CB98009FA45A /* MealInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealInfoViewController.swift; sourceTree = "<group>"; };
+		DED8A77E2242CBA8009FA45A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +73,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F60703F33E124B55F1EC0388 /* Pods_RxProjectBMSTUHack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		643905D843DE7842F6372FE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3ED8FB969BD698EE5DE85F11 /* Pods-RxProjectBMSTUHack.debug.xcconfig */,
+				972E8991CBD1F78A4A32A418 /* Pods-RxProjectBMSTUHack.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CA1077C82242BB0B006F64E8 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +138,8 @@
 			children = (
 				CA324B022242982E002DC3C3 /* RxProjectBMSTUHack */,
 				CA324B012242982E002DC3C3 /* Products */,
+				643905D843DE7842F6372FE3 /* Pods */,
+				D18EAECCCDB4E302550004D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,8 +181,8 @@
 		CA324B172242986A002DC3C3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DED8A7722242C90F009FA45A /* BuisenessLogic */,
 				CA324B1C224298CE002DC3C3 /* Model */,
-				CA324B1B22429894002DC3C3 /* BuisnessLogic */,
 				CA324B1A2242988D002DC3C3 /* Presentation */,
 			);
 			path = Classes;
@@ -163,6 +191,9 @@
 		CA324B1822429874002DC3C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DED8A7782242CB98009FA45A /* UIView+RoundCorner.swift */,
+				DED8A7752242C9BD009FA45A /* UIImage+Loader.swift */,
+				DED8A77E2242CBA8009FA45A /* Images.xcassets */,
 				CA324B0C2242982E002DC3C3 /* LaunchScreen.storyboard */,
 				CA324B0A2242982E002DC3C3 /* Assets.xcassets */,
 				CA1077C42242AB1D006F64E8 /* UIColor+CustomColors.swift */,
@@ -181,19 +212,13 @@
 		CA324B1A2242988D002DC3C3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DED8A7772242CB79009FA45A /* MealInfo */,
 				CA324B1D224298D6002DC3C3 /* Messroom */,
 				CA324B1F22429915002DC3C3 /* Menu */,
 				CA324B1E22429905002DC3C3 /* MessInfo */,
 				CA324B072242982E002DC3C3 /* Main.storyboard */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		CA324B1B22429894002DC3C3 /* BuisnessLogic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BuisnessLogic;
 			sourceTree = "<group>";
 		};
 		CA324B1C224298CE002DC3C3 /* Model */ = {
@@ -250,6 +275,31 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		D18EAECCCDB4E302550004D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD4ACBB935FD909CAE8D4E28 /* Pods_RxProjectBMSTUHack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DED8A7722242C90F009FA45A /* BuisenessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				DED8A7732242C942009FA45A /* ServiceLayer.swift */,
+			);
+			path = BuisenessLogic;
+			sourceTree = "<group>";
+		};
+		DED8A7772242CB79009FA45A /* MealInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DED8A7792242CB98009FA45A /* Main1.storyboard */,
+				DED8A77A2242CB98009FA45A /* MealInfoViewController.swift */,
+			);
+			path = MealInfo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -257,9 +307,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA324B122242982E002DC3C3 /* Build configuration list for PBXNativeTarget "RxProjectBMSTUHack" */;
 			buildPhases = (
+				467CEA0CC4ED72EA0D7F2B09 /* [CP] Check Pods Manifest.lock */,
 				CA324AFC2242982E002DC3C3 /* Sources */,
 				CA324AFD2242982E002DC3C3 /* Frameworks */,
 				CA324AFE2242982E002DC3C3 /* Resources */,
+				77956AD83C4AAB630C8FDF36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,13 +362,62 @@
 			files = (
 				CA324B0E2242982E002DC3C3 /* LaunchScreen.storyboard in Resources */,
 				CA324B2622429CF8002DC3C3 /* MessCell.xib in Resources */,
+				DED8A77F2242CBA8009FA45A /* Images.xcassets in Resources */,
 				CA324B0B2242982E002DC3C3 /* Assets.xcassets in Resources */,
 				CA1077D82242C3AA006F64E8 /* DayCell.xib in Resources */,
 				CA324B092242982E002DC3C3 /* Main.storyboard in Resources */,
+				DED8A77C2242CB98009FA45A /* Main1.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		467CEA0CC4ED72EA0D7F2B09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxProjectBMSTUHack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77956AD83C4AAB630C8FDF36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxProjectBMSTUHack/Pods-RxProjectBMSTUHack-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxProjectBMSTUHack/Pods-RxProjectBMSTUHack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA324AFC2242982E002DC3C3 /* Sources */ = {
@@ -325,6 +426,8 @@
 			files = (
 				CA1077CD2242BCF1006F64E8 /* WeekDay.swift in Sources */,
 				CA1077DA2242C5CE006F64E8 /* CategoryListViewController.swift in Sources */,
+				DED8A7762242C9BD009FA45A /* UIImage+Loader.swift in Sources */,
+				DED8A77D2242CB98009FA45A /* MealInfoViewController.swift in Sources */,
 				CA324B21224299D5002DC3C3 /* MessListViewController.swift in Sources */,
 				CA1077CF2242BD0D006F64E8 /* Nutrition.swift in Sources */,
 				CA324B2B2242A424002DC3C3 /* MessDataSource.swift in Sources */,
@@ -332,7 +435,9 @@
 				CA1077C72242BB06006F64E8 /* MenuViewController.swift in Sources */,
 				CA1077DC2242C629006F64E8 /* MealListViewController.swift in Sources */,
 				CA1077CB2242BCB5006F64E8 /* Meal.swift in Sources */,
+				DED8A77B2242CB98009FA45A /* UIView+RoundCorner.swift in Sources */,
 				CA324B042242982E002DC3C3 /* AppDelegate.swift in Sources */,
+				DED8A7742242C942009FA45A /* ServiceLayer.swift in Sources */,
 				CA1077C52242AB1D006F64E8 /* UIColor+CustomColors.swift in Sources */,
 				CA1077D12242C231006F64E8 /* WeekViewController.swift in Sources */,
 				CA1077D72242C3AA006F64E8 /* DayCell.swift in Sources */,
@@ -480,6 +585,7 @@
 		};
 		CA324B132242982E002DC3C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ED8FB969BD698EE5DE85F11 /* Pods-RxProjectBMSTUHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +605,7 @@
 		};
 		CA324B142242982E002DC3C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 972E8991CBD1F78A4A32A418 /* Pods-RxProjectBMSTUHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
