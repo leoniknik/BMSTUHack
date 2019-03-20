@@ -23,6 +23,14 @@ final class MealListViewController: UIViewController {
         collectionViewFlowLayout.sectionInset = UIEdgeInsets(top:20, left: 20, bottom: 20, right: 20)
         collectionView.register(MealCell.self, forCellWithReuseIdentifier: "\(MealCell.self)")
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard
+            let meal = sender as? Meal,
+            let viewController = segue.destination as? MealInfoViewController
+            else { return }
+        viewController.meal = meal
+    }
 }
 
 extension MealListViewController: UICollectionViewDataSource {
